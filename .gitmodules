@@ -1,0 +1,6 @@
+[submodule "AllTheThings"]
+	path = AllTheThings
+	url = https://github.com/ATTWoWAddon/AllTheThings
+[submodule "cdb"]
+	path = cdb
+	url = https://github.com/ATTWoWAddon/CDB
