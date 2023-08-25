@@ -18,6 +18,9 @@ EXIT /B 0
 :link_expansion
 if exist "%~1\" (
 	echo Checking "%~1\"
+	if exist "%~1\Interface\AddOns\AllTheThings" (
+		rmdir "%~1\Interface\AddOns\AllTheThings"
+	)
 	if NOT exist "%~1\Interface\AddOns\AllTheThings" (
 		mklink /J "%~1\Interface\AddOns\AllTheThings" "%cd%\AllTheThings"
 	)
